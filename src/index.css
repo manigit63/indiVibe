@@ -1,0 +1,153 @@
+@import "tailwindcss";
+@import "remixicon/fonts/remixicon.css";
+
+@import "swiper/css";
+@import "swiper/css/pagination";
+
+/* dark  mode -----------------------------------------*/
+body.dark  {
+  background: #18181b;
+  color: #fff;
+}
+body ,option{
+  background: #fff;
+  color: #18181b;
+}
+
+.crousal-gradient {
+  background: linear-gradient(to top, #fff, rgba(244,244,245,0.7), transparent);
+}
+body.dark .crousal-gradient {
+  background: linear-gradient(to top, #18181b, rgba(39,39,42,0.7), transparent);
+}
+
+
+/* btn styling ---------------------------------- */ 
+.btn {
+  --color: #E17100;
+  --color2: #ffffff;
+  padding: 0.2em 0.75em;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #FDC700;
+  transition: 1.2s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 700;
+  /* font-size: 0.9rem; */
+  /* font-family: cursive; */
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+.btn::after,
+.btn::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: var(--color);
+}
+
+.btn::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+  color: var(--color2);
+}
+
+.btn:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
+  border: 2px solid #FDC700;
+}
+
+
+
+/* ---------------- button ----------- */
+
+
+button:active {
+  transform: scale(0.96); /* make btn small */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* shadow  soft hogi */
+}
+
+
+/* custom Animation ---------------------------------*/
+.marquee-container {
+  position: relative;
+  overflow: hidden;
+  height: 2rem; 
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 600;
+  font-size: 1.25rem;
+  animation: scroll-left 22s linear infinite;
+}
+
+.marquee.reverse {
+  animation: scroll-right 22s linear infinite;
+  color: #fbbf24; /* amber-400 */
+}
+
+@keyframes scroll-left {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: -100%;
+  }
+}
+
+
+/* carausal style------------------------- */
+
+
+/* Customize Swiper pagination dots */
+.swiper-pagination-bullet {
+  background-color: #e5e7eb; /* Light gray (Tailwind's gray-200) */
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px !important;
+  transition: all 0.3s ease;
+  border-radius: 9999px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #22c55e; /* green-500 */
+  width: 24px;
+  border-radius: 9999px;
+}
