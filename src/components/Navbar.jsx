@@ -19,7 +19,7 @@ const Navbar = () => {
       {/* Logo */}
       <NavLink to="/" className="flex items-center gap-2">
         <i className="ri-shopping-bag-4-fill text-3xl text-amber-600"></i>
-        <span className="text-xl font-bold hidden sm:inline">ShopNEst</span>
+        <span className="text-xl font-bold hidden sm:inline">IndieVibe</span>
       </NavLink>
 
       {/* Search Bar */}

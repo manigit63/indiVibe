@@ -2,69 +2,108 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className=" pt-10 mt-10 animate-fadeInUp">
-      {/* Top Links Section */}
-      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 px-6 pb-10 border-b border-gray-600">
-        {/* Section 1 */}
+    <footer className="pt-10 px-6 text-sm">
+      {/* TOP SECTIONS */}
+      <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 pb-10 border-b border-gray-300">
+        {/* Column 1 */}
         <div>
-          <h3 className="font-bold mb-4">Get to Know Us</h3>
-          <ul className="space-y-2 text-sm ">
-            <li><a href="/about" className="hover:underline">About Us</a></li>
-            <li><a href="#" className="hover:underline">Careers</a></li>
-            <li><a href="#" className="hover:underline">Press Releases</a></li>
-            <li><a href="#" className="hover:underline">ShopNest Science</a></li>
+          <h3 className="font-bold uppercase  mb-3 text-sm">Online Shopping</h3>
+          <ul className="space-y-1">
+            <li>Men</li>
+            <li>Women</li>
+            <li>Kids</li>
+            <li>Home</li>
+            <li>Beauty</li>
+            <li>Genz</li>
+            <li>Gift Cards</li>
+            <li>Myntra Insider</li>
           </ul>
         </div>
 
-        {/* Section 2 */}
+        {/* Column 2 */}
         <div>
-          <h3 className="font-bold mb-4">Connect with Us</h3>
-          <ul className="space-y-2 text-sm ">
-            <li><a href="#" className="hover:underline">Facebook</a></li>
-            <li><a href="#" className="hover:underline">Twitter</a></li>
-            <li><a href="#" className="hover:underline">Instagram</a></li>
-            <li><a href="#" className="hover:underline">YouTube</a></li>
+          <h3 className="font-bold uppercase  mb-3 text-sm">Useful Links</h3>
+          <ul className="space-y-1">
+            <li>Blog</li>
+            <li>Careers</li>
+            <li>Site Map</li>
+            <li>Corporate Information</li>
+            <li>Whitehat</li>
+            <li>Cleartrip</li>
+            <li>Myntra Global</li>
           </ul>
         </div>
 
-        {/* Section 3 */}
+        {/* Column 3 */}
         <div>
-          <h3 className="font-bold mb-4">Make Money with Us</h3>
-          <ul className="space-y-2 text-sm ">
-            <li><a href="#" className="hover:underline">Sell on ShopNest</a></li>
-            <li><a href="#" className="hover:underline">Affiliate Program</a></li>
-            <li><a href="#" className="hover:underline">Advertise Your Products</a></li>
-            <li><a href="#" className="hover:underline">Become a Seller</a></li>
+          <h3 className="font-bold uppercase  mb-3 text-sm">
+            Customer Policies
+          </h3>
+          <ul className="space-y-1">
+            <li>Contact Us</li>
+            <li>FAQ</li>
+            <li>T&C</li>
+            <li>Terms Of Use</li>
+            <li>Track Orders</li>
+            <li>Shipping</li>
+            <li>Cancellation</li>
+            <li>Returns</li>
+            <li>Privacy Policy</li>
+            <li>Grievance Redressal</li>
           </ul>
         </div>
 
-        {/* Section 4 */}
+        {/* Column 4 */}
         <div>
-          <h3 className="font-bold mb-4">Let Us Help You</h3>
-          <ul className="space-y-2 text-sm ">
-            <li><a href="/contact" className="hover:underline">Your Account</a></li>
-            <li><a href="/cart" className="hover:underline">Your Cart</a></li>
-            <li><a href="#" className="hover:underline">Returns Centre</a></li>
-            <li><a href="#" className="hover:underline">Help</a></li>
-          </ul>
+          <h3 className="font-bold uppercase  mb-3 text-sm">
+            Experience Our App On Mobile
+          </h3>
+          <div className="flex gap-2 mt-2">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/512px-Google_Play_Store_badge_EN.svg.png"
+              alt="Play Store"
+              className="w-28"
+            />
+            <img
+              src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+              alt="App Store"
+              className="w-24"
+            />
+          </div>
+        </div>
+
+        {/* Column 5 */}
+        <div>
+          <h3 className="font-bold uppercase text-black mb-3 text-sm">
+            Keep in Touch
+          </h3>
+          <div className="flex gap-3 text-xl mt-2">
+            <a href="#">
+              <i className="ri-facebook-fill  hover:text-black"></i>
+            </a>
+            <a href="#">
+              <i className="ri-twitter-fill  hover:text-black"></i>
+            </a>
+            <a href="#">
+              <i className="ri-instagram-line  hover:text-black"></i>
+            </a>
+            <a href="#">
+              <i className="ri-youtube-fill  hover:text-black"></i>
+            </a>
+          </div>
         </div>
       </div>
 
-      {/* Contact Info */}
-      <div className="max-w-7xl mx-auto px-6 py-6 text-sm  flex flex-col md:flex-row justify-between items-center gap-4">
-        <div>
-          <p>📧 Email: <a href="mailto:rajputprerna1503@gmail.com" className="text-amber-300 hover:underline">admin@ShopNEst.com</a></p>
-          <p>📞 Contact: <span className="text-amber-300">+91 123 450 6789</span></p>
-        </div>
-        <div className="flex items-center gap-3 text-2xl">
-          <i className="ri-shopping-bag-4-fill text-amber-500"></i>
-          <span className="font-bold text-lg">ShopNest</span>
-        </div>
-      </div>
-
-      {/* Bottom */}
-      <div className="bg-[#131A22] text-center text-gray-400 text-xs py-4">
-        &copy; {new Date().getFullYear()} ShopNest. All rights reserved.
+      {/* Bottom Texts */}
+      <div className="max-w-7xl mx-auto mt-6 pb-8 text-xs 0 space-y-2">
+        <p>
+          ✅ <strong>100% ORIGINAL</strong> guarantee for all products at
+          ElitéCArt .com
+        </p>
+        <p>🔁 Return within 14 days of receiving your order</p>
+        <p className="mt-4 text-center ">
+          &copy; {new Date().getFullYear()} ElitéCArt . All rights reserved.
+        </p>
       </div>
     </footer>
   );

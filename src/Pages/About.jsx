@@ -7,7 +7,7 @@ const About = () => {
       <div className="max-w-4xl w-full text-center">
         <h1 className="text-4xl font-extrabold  mb-4">About Us</h1>
         <p className="text-lg  mb-8">
-          At <span className="font-semibold text-amber-700">ShopNest</span>, we
+          At <span className="font-semibold text-amber-700">IndieVibe</span>, we
           believe shopping should be more than just a transaction — it should be
           an experience.
         </p>
@@ -33,8 +33,9 @@ const About = () => {
             </p>
             <p className="mt-4">
               Whether you're shopping for yourself or searching for the perfect
-              gift, <span className="text-amber-800 font-medium">ShopNest</span>{" "}
-              is here to make every moment count.
+              gift,{" "}
+              <span className="text-amber-800 font-medium">IndieVibe</span> is
+              here to make every moment count.
             </p>
           </div>
         </div>
@@ -42,14 +43,12 @@ const About = () => {
         <div className="mt-10 flex justify-center gap-4">
           <Link
             className="bg-amber-600 hover:bg-amber-700  px-6 py-2 rounded-full shadow-md transition duration-200"
-            to="/"
-          >
+            to="/">
             Start Shopping
           </Link>
           <Link
             className="bg-gray-700 hover:bg-gray-800 git  px-6 py-2 rounded-full shadow-md transition duration-200"
-            to="/contact"
-          >
+            to="/contact">
             Contact Us
           </Link>
         </div>
